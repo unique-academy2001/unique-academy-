@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unique Academy | Karnal | Since 2001</title>
+<meta name="description" content="Unique Academy Karnal — quality education, personal guidance and special classes since 2001.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#07152f;--blue:#103b83;--gold:#e4b84b;--cream:#fffaf0;--ink:#15213a;--muted:#68758c}
+html{scroll-behavior:smooth} body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#f7f9fd;line-height:1.6}
+a{text-decoration:none}.top{background:#050e22;color:#dce6f8;text-align:center;padding:8px 15px;font-size:13px}
+header{position:sticky;top:0;z-index:20;background:#07152fee;backdrop-filter:blur(14px);color:white;border-bottom:1px solid #ffffff16}
+.nav{max-width:1250px;margin:auto;padding:15px 5%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;color:white}.logo{height:48px;width:48px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:13px}.brand b{font-size:19px;letter-spacing:.4px}.brand small{display:block;color:#b9c7df;font-size:10px;letter-spacing:2px}
+nav a{color:#eaf0fb;margin-left:25px;font-size:14px;font-weight:700}.menu{display:none;color:white;font-size:25px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#06132c 0%,#0d2d68 62%,#184b91 100%);color:white}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:#e4b84b15;right:-160px;top:-180px}
+.hero-inner{max-width:1250px;margin:auto;padding:92px 5% 85px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;position:relative}
+.pill{display:inline-block;color:#f7d779;background:#e4b84b15;border:1px solid #e4b84b66;padding:8px 15px;border-radius:50px;font-size:12px;font-weight:800;letter-spacing:1px}
+h1{font-size:clamp(43px,6vw,76px);line-height:1.02;margin:20px 0}.hero h1 span{color:#f2ca62}
+.hero-copy{font-size:19px;color:#d9e5f8;max-width:680px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:13px 21px;border-radius:10px;font-weight:800;display:inline-block}.gold{background:var(--gold);color:#07152f}.white{border:1px solid #ffffff55;color:white}
+.hero-card{background:#ffffff10;border:1px solid #ffffff25;border-radius:25px;padding:30px;backdrop-filter:blur(10px);box-shadow:0 25px 70px #0003}.hero-card h3{font-size:24px;margin-bottom:8px}.hero-card p{color:#d4e0f3}.contact-line{margin-top:20px;padding-top:18px;border-top:1px solid #ffffff22;font-weight:700}
+section{padding:80px 5%}.wrap{max-width:1250px;margin:auto}.heading{text-align:center;margin-bottom:42px}.eyebrow{color:#a47a16;font-weight:900;letter-spacing:2px;font-size:12px}.heading h2{font-size:42px;color:var(--navy);margin:7px 0}.heading p{color:var(--muted);max-width:680px;margin:auto}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature,.course,.achievement,.contact-card{background:white;border:1px solid #e6eaf2;border-radius:20px;padding:27px;box-shadow:0 12px 35px #091b3b0b}.icon{font-size:30px;margin-bottom:12px}.feature h3,.course h3{color:var(--navy);margin-bottom:7px}.muted{color:var(--muted)}
+.dark{background:var(--navy);color:white}.dark .heading h2{color:white}.dark .heading p{color:#b9c8df}
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.course{border-top:4px solid var(--gold)}.course ul{margin:12px 0 0 20px;color:#657188}.course li{margin:3px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.stat{text-align:center;border:1px solid #ffffff18;border-radius:18px;padding:25px}.stat strong{display:block;font-size:34px;color:#f1c85e}.stat span{color:#bdc9dc;font-size:14px}
+.achievements{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.achievement .number{font-size:35px;color:#b88617;font-weight:900}.achievement h3{color:var(--navy);margin:5px 0}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.photo{min-height:190px;border-radius:20px;background:linear-gradient(135deg,#eaf0fb,#fff7df);display:grid;place-items:center;text-align:center;color:#738098;font-weight:800;border:1px dashed #c6cfdf}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact-card h3{color:var(--navy);margin-bottom:10px}.contact-card a{color:var(--blue);font-weight:800}.cta{margin-top:22px;background:linear-gradient(135deg,#e4b84b,#f1d278);border-radius:25px;padding:35px;text-align:center;color:#07152f}.cta h2{font-size:32px}.cta .btn{background:#07152f;color:white;margin-top:17px}
+footer{background:#040c1c;color:#aebbd1;text-align:center;padding:30px 5%;font-size:13px}footer b{color:#fff}
+@media(max-width:850px){nav{display:none}.menu{display:block}.hero-inner{grid-template-columns:1fr;padding-top:65px}.features,.courses,.achievements,.gallery{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.features,.courses,.achievements,.gallery,.stats{grid-template-columns:1fr}.hero-card{margin-top:10px}section{padding:60px 5%}.heading h2{font-size:33px}}
+</style>
+</head>
+<body>
+<div class="top">🎓 Admissions & Enquiries Open • Unique Academy, Karnal • Since 2001</div>
+<header><div class="nav">
+<a class="brand" href="#"><div class="logo">UA</div><div><b>UNIQUE ACADEMY</b><small>SINCE 2001 • KARNAL</small></div></a>
+<nav><a href="#about">About</a><a href="#courses">Courses</a><a href="#achievements">Achievements</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav><div class="menu">☰</div>
+</div></header>
+
+<section class="hero"><div class="hero-inner">
+<div>
+<span class="pill">TRUSTED EDUCATION • KARNAL</span>
+<h1>Build Your Future<br>with <span>Unique Academy.</span></h1>
+<p class="hero-copy">Focused teaching, strong concepts and personal academic guidance for school, undergraduate and postgraduate students.</p>
+<div class="buttons"><a class="btn gold" href="tel:9813182182">📞 Call Now</a><a class="btn white" href="#courses">Explore Courses →</a></div>
+</div>
+<div class="hero-card"><h3>Start Your Academic Journey</h3><p>Connect with us for course information, admission enquiries and special classes.</p>
+<div class="contact-line">📱 9813182182<br>📱 9034262423</div><div class="contact-line">📍 Shop No. 12, 2nd Floor, Shad Complex, Railway Road, Karnal</div></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="heading"><div class="eyebrow">WHY UNIQUE ACADEMY</div><h2>Education with a Purpose</h2><p>A learning environment designed to help students understand concepts, improve confidence and stay focused on their academic goals.</p></div>
+<div class="features"><div class="feature"><div class="icon">🎯</div><h3>Concept Focused</h3><p class="muted">Clear explanations and fundamentals that help students learn beyond memorisation.</p></div>
+<div class="feature"><div class="icon">👨‍🏫</div><h3>Personal Guidance</h3><p class="muted">Academic support across school, college and postgraduate courses.</p></div>
+<div class="feature"><div class="icon">📚</div><h3>Wide Course Range</h3><p class="muted">From classes 6–12 to BA, BBA/BCA/B.Com and M.A. Economics.</p></div></div></div></section>
+
+<section id="courses" class="dark"><div class="wrap"><div class="heading"><div class="eyebrow">ACADEMIC PROGRAMMES</div><h2>Courses We Offer</h2><p>Structured academic support for different stages of education.</p></div>
+<div class="courses"><div class="course"><h3>Classes 6th–10th</h3><ul><li>All Subjects</li></ul></div>
+<div class="course"><h3>Classes 11th–12th</h3><ul><li>Maths</li><li>English</li><li>Economics</li><li>Political Science</li><li>Sociology</li></ul></div>
+<div class="course"><h3>B.A.</h3><ul><li>English</li><li>Economics</li></ul></div>
+<div class="course"><h3>BBA / BCA / B.Com</h3><ul><li>Economics</li><li>Maths</li><li>Statistics</li></ul></div>
+<div class="course"><h3>M.A. Economics</h3><ul><li>Economics</li></ul></div>
+<div class="course"><h3>Special Classes</h3><ul><li>Haryana Open</li><li>National Open</li><li>IGNOU Classes</li></ul></div></div>
+<div class="stats"><div class="stat"><strong>2001</strong><span>Established</span></div><div class="stat"><strong>6–12</strong><span>School Classes</span></div><div class="stat"><strong>UG</strong><span>Degree Courses</span></div><div class="stat"><strong>PG</strong><span>Postgraduate</span></div></div>
+</div></section>
+
+<section id="achievements"><div class="wrap"><div class="heading"><div class="eyebrow">STUDENT SUCCESS</div><h2>Achievements</h2><p>Celebrating the hard work and progress of our students.</p></div>
+<div class="achievements"><div class="achievement"><div class="number">81%</div><h3>Academic Achievement</h3><p class="muted">Student achievement highlight — ready for your original photo.</p></div>
+<div class="achievement"><div class="number">78%</div><h3>Student Achievement</h3><p class="muted">A dedicated result showcase section for academy students.</p></div>
+<div class="achievement"><div class="number">78%</div><h3>Student Achievement</h3><p class="muted">Add student name, photo and result details here.</p></div></div></div></section>
+
+<section id="gallery"><div class="wrap"><div class="heading"><div class="eyebrow">OUR GALLERY</div><h2>Inside Unique Academy</h2><p>Your academy photos can be placed here.</p></div>
+<div class="gallery"><div class="photo">📷 Academy Photo<br><small>Upload image</small></div><div class="photo">🏆 Achievement Photo<br><small>Upload image</small></div><div class="photo">👨‍🏫 Faculty Photo<br><small>Upload image</small></div></div></div></section>
+
+<section id="contact" class="dark"><div class="wrap"><div class="heading"><div class="eyebrow">GET IN TOUCH</div><h2>Contact Unique Academy</h2><p>We are ready to help you with admissions and course information.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>📍 Visit Our Academy</h3><p>Shop No. 12, 2nd Floor,<br>Shad Complex, Railway Road,<br>Karnal, Haryana</p></div><div class="contact-card"><h3>📞 Contact Us</h3><p><a href="tel:9813182182">9813182182</a><br><a href="tel:9034262423">9034262423</a><br><a href="https://instagram.com/uniqueacademy2001" target="_blank">Instagram: @uniqueacademy2001</a></p></div></div>
+<div class="cta"><h2>Ready to Learn Better?</h2><p>Talk to Unique Academy today.</p><a class="btn" href="tel:9813182182">Call Unique Academy</a></div>
+</div></section>
+<footer>© 2026 <b>Unique Academy</b> • Since 2001 • Karnal<br>Quality Education • Personal Guidance • Academic Excellence</footer>
+</body></html>
